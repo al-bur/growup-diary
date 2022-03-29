@@ -25,3 +25,20 @@
 
     element.appendChild(childRef); and element.removeChild(childRef); both make the browser to manipulate the DOM tree while changing CSS just changes one of the attributes.
    ````
+
+
+- textcontent를 활용해서 DOM 내용 변경해주는 것
+  - 요소 노드에 자식 노드가 있는 경우 요소 노드의 textContent 프로퍼티에 문자열을 할당하면 요소 노드의 모든 자식 노드가 제거되고 할당한 문자열이 텍스트로 추가된다.
+
+
+- label for와 id의 관계
+   - label과 id를 가진 요소를 연결해주기 위해
+   - 왜?
+     ```
+      <label> 을 <input> 요소와 연결하면 몇 가지 이점이 있습니다:
+
+      label 텍스트는 텍스트 입력과 시각적으로 관련이 있을뿐만 아니라 프로그래밍적으로도 관련이 있습니다. 예를 들어, 화면리더기(screenreader) 는 폼 입력(form          input)에서 label 을 읽어서 보조기술(assistive technology) 사용자가 입력해야하는 텍스트가 무엇인지 더 쉽게 이해할 수 있게 합니다. 
+      관련 label 을 클릭해서 input  자체에 초점을 맞추거나 활성화를 시킬 수 있습니다. (활성되어서)늘어난 누를 수 있는 영역(hit area)은 터치스크린 사용자를 포함해         입력하려하는 모든 사람에게 이점을 줍니다.
+
+      ```
+     
