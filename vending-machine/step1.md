@@ -15,3 +15,13 @@
 ## 220326
 
 - 데이터 바인딩은 두 데이터 혹은 정보의 소스를 일치시키는 기법으로 화면에 보이는 데이터와 브라우저 메모리에 있는 데이터를 일치시키는 것을 말한다.
+
+## 220329
+
+- display:none vs dom 삭제/추가
+   - dom을 삭제 추가를 하면 dom tree가 수정이 된다.
+   - display:none은 cssom만 수정이 된다.
+   ```
+
+    element.appendChild(childRef); and element.removeChild(childRef); both make the browser to manipulate the DOM tree while changing CSS just changes one of the attributes.
+   ````
