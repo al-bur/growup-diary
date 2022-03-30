@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <style type="text/css">
+      code {
+        background-color: lightgray;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <seciton>
+      <h1>이벤트 구현하는 방법</h1>
+      <div>
+        <h2>element의 addEventListener를 사용하는 방법</h2>
+        <code> $button.addEventListener('click', 이벤트핸들러 함수) </code>
+      </div>
+      <div>
+        <h2>element의 프로퍼티를 사용하는 방법</h2>
+        <code> $button.onclick = () => 원하는 로직 </code>
+      </div>
+    </seciton>
+    <section>
+      <h1>실습</h1>
+      <button id="addEventListener-button" type="button">addEventListener</button>
+      <button id="onclick-button" type="button">onclick</button>
+    </section>
+    <script>
+      const $addEventListenerButton = document.querySelector('#addEventListener-button');
+      $addEventListenerButton.addEventListener('click', () => show('addEventlistener'));
+
+      const $onclickButton = document.querySelector('#onclick-button');
+      $onclickButton.onclick = () => show('onclick');
+
+      function show(type) {
+        alert(`${type}을 활용하여 이벤트 핸들러를 달아주었습니다`);
+      }
+    </script>
+  </body>
+</html>
