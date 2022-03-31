@@ -51,4 +51,16 @@
       <charge-money-page></charge-money-page>
       <purchase-product-page></purchase-product-page>
 ```
+
+
+- 오른쪽에서 왼쪽으로 파싱한다. 그래서 맨 오른쪽이 찾을 후보가 적은 것이 좋다.
+
+```css
+
+#product-table li input {
+   font-size: 16px
+}
+
+```
+
      
