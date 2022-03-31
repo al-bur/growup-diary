@@ -63,4 +63,6 @@
 
 ```
 
+- typescript readOnly는 객체의 프로퍼티를 위한 const
+
      
