@@ -41,4 +41,14 @@
       관련 label 을 클릭해서 input  자체에 초점을 맞추거나 활성화를 시킬 수 있습니다. (활성되어서)늘어난 누를 수 있는 영역(hit area)은 터치스크린 사용자를 포함해         입력하려하는 모든 사람에게 이점을 줍니다.
 
       ```
+      
+## 220331
+
+- 아래처럼 태그를 설정해도 작동한다. 어떤 태그인지 상관이 없지만, semantic tag는 `A semantic element clearly describes its meaning to both the browser and the developer.` 때문이라서 사용하나보다.
+
+```html
+      <product-manage-page></product-manage-page>
+      <charge-money-page></charge-money-page>
+      <purchase-product-page></purchase-product-page>
+```
      
