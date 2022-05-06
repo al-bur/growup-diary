@@ -10,4 +10,4 @@
 
 ## 220506
 
-- useCallback과 React.memo를 사용해서 렌더링 최적화하는 것을 배웠다.
+- class component는 리렌더링이 되면 렌더링 부분만 재실행되고, function component는 리렌더링이 되면 함수 자체가 다시 실행되는 차이가 있다.
