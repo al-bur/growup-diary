@@ -1,3 +1,5 @@
+# Drawing to the Screen
+
 A web browser doesn’t just download a web page; it also has to show that page to the user.
 
 ## Creating windows
@@ -30,4 +32,3 @@ canvas.pack()
 ```
 
 The first line creates the window, as above; the second creates the Canvas inside that window. We pass the window as an argument, so that Tk knows where to display the canvas, and some arguments that define the canvas’s size; I chose 800×600 because that was a common old-timey monitor size.This size, called Super Video Graphics Array, was standardized in 1987, and probably did seem super back then. The third line is a Tk peculiarity, which positions the canvas inside the window.
-

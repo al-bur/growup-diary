@@ -54,7 +54,6 @@ def lex(body):
     return text
 
 def layout(text):
-    print('layout')
     display_list = []
     cursor_x, cursor_y = HSTEP, VSTEP
     for c in text:
@@ -82,7 +81,6 @@ class Browser:
     def draw(self):
         self.canvas.delete("all")
         for x, y, c in self.display_list:
-            print(x, y - self.scroll, c)
             self.canvas.create_text(x, y - self.scroll, text=c)
     
     def load(self, url):
