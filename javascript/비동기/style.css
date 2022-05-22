@@ -1,0 +1,8 @@
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
+
+h1 {
+  text-align: center;
+}
