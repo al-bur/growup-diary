@@ -33,3 +33,7 @@ class WordAdder extends React.Component {
 ## 220522
 
 - json()메소드 역시 비동기 함수이기 때문에 또 하나의 Promise를 반환한다.
+
+## 220523
+
+- 컴포넌트의 children이 2개 이상의 것(?)들로 이루어져있을 경우 Array이 이기 때문에 React.memo로 감싸줘도 렌더링이 된다. 이는, children을 하나로 만들 수 있으면, 하나로 만들어서 전달해주면 될 것 같다.
