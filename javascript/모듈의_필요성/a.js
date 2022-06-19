@@ -1,1 +1,3 @@
-const title = 'this is file a';
+(function () {
+  const title = 'this is file a';
+})();
