@@ -1,3 +1,3 @@
-(function () {
-  const title = 'this is file a';
-})();
+const title = 'this is file a';
+
+console.log(title);
