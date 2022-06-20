@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react';
+import App from './App';
 
 const DataContext = createContext();
 
@@ -9,7 +10,8 @@ function DataContextProvider({ children }) {
 
   return (
     <DataContext.Provider value={{ isOpen, setIsOpen }}>
-      {children}
+      <App />
+      {/* {children} */}
     </DataContext.Provider>
   );
 }

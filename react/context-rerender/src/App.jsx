@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import Child from './Child';
 
 function App() {
@@ -11,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);
