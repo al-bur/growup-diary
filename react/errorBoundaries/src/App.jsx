@@ -1,18 +1,16 @@
 function App() {
-  setTimeout(() => {
-    console.log('setTimeout is not caught by error boundary');
-    throw Error();
-  }, 1000);
+  const obj = {
+    app: 'value',
+  };
 
-  return [
-    <h1>this is App</h1>,
-    <button
-      onClick={() => {
-        console.log('event handler is not caught error boundary');
-        throw Error();
-      }}
-    ></button>,
-  ];
+  console.log(obj);
+
+  return (
+    <>
+      {obj.apple}
+      <h1>this is App</h1>
+    </>
+  );
 }
 
 export default App;
