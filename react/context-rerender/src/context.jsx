@@ -9,7 +9,7 @@ function DataContextProvider({ children }) {
   console.log('contextProvider is rendered');
 
   return (
-    <DataContext.Provider value={{ isOpen, setIsOpen }}>
+    <DataContext.Provider value={{ isOpen, setIsOpen, name: 'same' }}>
       <App />
       {/* {children} */}
     </DataContext.Provider>
