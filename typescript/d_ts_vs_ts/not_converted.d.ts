@@ -1,0 +1,3 @@
+interface Apple {
+  name: string;
+}
